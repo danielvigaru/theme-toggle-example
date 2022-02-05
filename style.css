@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+nav.light-theme {
+    border-bottom: 5px solid #4b6587;
+    background-color: #e7e7e7;
+}
+
+nav.dark-theme {
+    border-bottom: 5px solid #bc3737;
+    background-color: #30475e;
+}
+
+nav .theme-toggle-btn {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0.4rem;
+    border-radius: 50%;
+}
+
+nav .theme-toggle-btn svg {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+nav .theme-toggle-btn:hover {
+    background-color: hsla(0, 0%, 50%, 0.25);
+}
+
+nav .theme-toggle-btn svg .icon-circle {
+    transition: transform 750ms cubic-bezier(0.25, 0.1, 0, 1.07);
+}
+
+nav .theme-toggle-btn svg.light-theme .icon-circle {
+    transform: translate(-15%, -8%) scale(1.1);
+}
+
+nav .theme-toggle-btn svg .icon-star {
+    transform-origin: center;
+    transition: transform 750ms cubic-bezier(0.28, -0.09, 0.09, 1.36);
+}
+
+nav .theme-toggle-btn svg.light-theme .icon-star {
+    transform: rotate(0.5turn);
+}
+
+nav .theme-toggle-btn svg.dark-theme {
+    fill: #f5f5f5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+header.light-theme {
+    background-color: #e7e7e7;
+    color: #4b6587;
+}
+
+header.dark-theme {
+    background-color: #bc3737;
+    color: #f5f5f5;
+}
+
+header h1 {
+    font-family: "DM Serif Display", serif;
+}
+
+main {
+    min-height: 80vh;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+}
+
+main article {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    padding: 3rem 3rem;
+}
+
+main.light-theme {
+    background-color: #e7e7e7;
+    color: #000;
+}
+
+main.dark-theme {
+    background-color: #30475e;
+    color: #f5f5f5;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    height: 10vh;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+footer.light-theme {
+    background-color: #4b6587;
+    color: #f7f6f2;
+}
+
+footer.dark-theme {
+    background-color: #121212;
+    color: #f5f5f5;
+}
