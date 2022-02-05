@@ -83,6 +83,8 @@ header.dark-theme {
 
 header h1 {
     font-family: "DM Serif Display", serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 main {
